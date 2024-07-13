@@ -36,4 +36,5 @@ class controller():
         print (self.encryption(plaintext, secret_word, table))
         return 0
     
-    main()
+
+controller.main()
