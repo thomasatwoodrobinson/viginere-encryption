@@ -3,7 +3,9 @@ class viginere_table():
     global abc
     abc = ['a','b','c','d','e','f','g','h', 'i', 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
     
-    def keyed_list(keyword):
+    def keyed_list():
+        print('Enter keyword: ')
+        keyword = input()
         keyed_list = list()
         for letter in keyword:
             keyed_list.append(letter)
@@ -32,15 +34,5 @@ class viginere_table():
                 new_row.append(keyed_list[start])
                 start = start + 1
             matrix.append(new_row)
-            print(new_row)
         
         return matrix
-    
-
-class main():
-    
-    keyed_list = viginere_table.keyed_list('love')
-    matrix = viginere_table.matrix(keyed_list)
-    #print(matrix)
-
-main()
