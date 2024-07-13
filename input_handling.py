@@ -1,7 +1,7 @@
-class paintext():
+class plaintext():
 
-    def remove_spaces(self, string):
-        return string.replace(" ", "")
+    def remove_spaces(self, word):
+        return word.replace(" ", "")
     
     def get_plaintext(self):
         plaintext = []
